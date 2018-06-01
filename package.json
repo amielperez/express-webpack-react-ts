@@ -1,0 +1,39 @@
+{
+  "name": "react-ts-d3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./node_modules/webpack/bin/webpack && node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amielperez/react-ts-d3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amielperez/react-ts-d3/issues"
+  },
+  "homepage": "https://github.com/amielperez/react-ts-d3#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "del-webpack-plugin": "^1.0.6",
+    "event-source-polyfill": "0.0.12",
+    "express": "^4.16.3",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.10.0",
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-hot-middleware": "^2.22.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.4"
+  }
+}

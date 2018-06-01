@@ -29,6 +29,11 @@ const config = {
                 loader: 'babel-loader',
                 exclude: /node_modules/
             },
+            {
+                test: /\.(ts|tsx)$/,
+                loader: 'babel-loader!awesome-typescript-loader',
+                exclude: /node_modules/
+            }
         ]
     },
     resolve: {

@@ -27,19 +27,23 @@ const config = {
             {
                 test: /\.(js|jsx)$/,
                 loader: 'babel-loader',
-                exclude: /node_modules/
+                exclude: /node_modules/,
             },
             {
                 test: /\.(ts|tsx)$/,
                 loader: 'babel-loader!awesome-typescript-loader',
-                exclude: /node_modules/
+                exclude: /node_modules/,
+            }, {
+                test: /\.(css|scss)$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+                exclude: /node_modules/,
             }
         ]
     },
     resolve: {
         extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
     },
-    devtool: 'cheap-source-map',
+    devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
             chunks: ['vendor', 'app'],
